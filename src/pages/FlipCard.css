@@ -1,0 +1,229 @@
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 185px;
+  perspective: 1000px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.heading_8264 {
+  position: absolute;
+  letter-spacing: .2em;
+  font-size: 0.5em;
+  top: 5em;
+  right: 12px;
+  z-index: 100;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-mastercard,
+.flip-card-back-mastercard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-mastercard {
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  border-radius: 10px;
+}
+
+.flip-card-back-mastercard {
+  background: #000000;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+.flip-card-front-american,
+.flip-card-back-american {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-american {
+  background: linear-gradient(135deg, #00ee6a 0%, #31910c 100%);
+  border-radius: 10px;
+}
+
+.flip-card-back-american {
+  background: #4ab91d;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-visa,
+.flip-card-back-visa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-visa {
+  background: linear-gradient(135deg, #0061ee 0%, #0c2b91 100%);
+  border-radius: 10px;
+}
+
+.flip-card-back-visa {
+  background: #0c2b91;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-dd,
+.flip-card-back-dd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-dd {
+  /* background: linear-gradient(135deg, #0061ee 0%, #0c2b91 100%); */
+  background:#FFFDD0;
+  color: black;
+  border-radius: 10px;
+}
+
+.flip-card-back-dd {
+  background: #FFFDD0;
+  color: black;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+
+.logo {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 12px;
+  right: 25px;
+}
+
+.chip {
+  position: absolute;
+  top: 10%;
+  right: 84%;
+  /* width: 36px; */
+}
+
+.number {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  font-size: 1.6em;
+}
+
+.valid_thru {
+  position: absolute;
+  top: 72%;
+  left: 76%;
+  font-size: 0.9em;
+}
+.valid_thru1 {
+  position: absolute;
+  top: 69%;
+  left: 75%;
+  font-size: 0.6em;
+}
+
+.name {
+  position: absolute;
+  bottom: 5%;
+  left: 6%;
+  font-size: 1.1em;
+}
+
+.code {
+  text-align: center;
+  font-size: 1.2em;
+  color: #fffbfb;
+  line-height: 30px;
+}
+.code1 {
+  text-align: center;
+  font-size: 1.2em;
+  color: #000000;
+  line-height: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax value for card size */
+  gap: 5rem; /* Space between cards */
+  padding: 10px 100px 50px 30px; 
+}
+
+.card-item:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-select,
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-select:focus,
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
